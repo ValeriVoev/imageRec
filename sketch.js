@@ -42,7 +42,6 @@ function mouseDragged(){
 }
 
 function setup() {
-	createElement('h2', 'Image classifier with MobileNet');
 	c = createCanvas(600,500);
 	background(200);
 	textAlign(CENTER);
