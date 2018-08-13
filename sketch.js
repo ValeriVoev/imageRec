@@ -42,12 +42,12 @@ function mouseDragged(){
 }
 
 function setup() {
-	c = createCanvas(600,500);
+	c = createCanvas(800,600);
 	background(200);
 	textAlign(CENTER);
 	text('drop an image and/or draw with your mouse', width / 2, height / 2);
 	classifier = ml5.imageClassifier('MobileNet', modelLoaded);
-	p = createP("Drag an image and I'll tell you what it is.");
+	p = createP("Drag an image and I'll try to guess what it is.");
 	createP("Choose size of the brush using the slider");
 	slider = createSlider(1, 20, 5);
 	slider.style('width', '80px');
